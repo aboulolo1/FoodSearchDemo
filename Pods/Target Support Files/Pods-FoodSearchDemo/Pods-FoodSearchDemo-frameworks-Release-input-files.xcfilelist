@@ -1,0 +1,10 @@
+${PODS_ROOT}/Target Support Files/Pods-FoodSearchDemo/Pods-FoodSearchDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessageBar/SwiftMessageBar.framework
+${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework

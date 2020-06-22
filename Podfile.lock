@@ -1,0 +1,50 @@
+PODS:
+  - Kingfisher (4.10.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SCLAlertView (0.8)
+  - SearchTextField (1.2.4)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessageBar (5.4.2)
+  - UIScrollView-InfiniteScroll (1.1.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SCLAlertView
+  - SearchTextField
+  - SVProgressHUD
+  - SwiftMessageBar
+  - UIScrollView-InfiniteScroll
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SCLAlertView
+    - SearchTextField
+    - SVProgressHUD
+    - SwiftMessageBar
+    - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessageBar: bb0ca6eba6725887004bfaba0b35225681b6bd18
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
+
+PODFILE CHECKSUM: 5f2b4f325939d1215acb4bf9e6fe625a75bdc43a
+
+COCOAPODS: 1.9.1

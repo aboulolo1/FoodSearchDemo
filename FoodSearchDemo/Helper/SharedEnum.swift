@@ -7,3 +7,8 @@
 //
 
 import Foundation
+enum LoadingType: Int {
+    case Default = 1
+    case Search = 2
+    case InfiniteScroll = 3
+}

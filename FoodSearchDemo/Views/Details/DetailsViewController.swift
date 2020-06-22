@@ -7,24 +7,36 @@
 //
 
 import UIKit
+import SafariServices
+class DetailsViewController: BaseViewController {
 
-class DetailsViewController: UIViewController {
-
+    @IBOutlet weak var publishUrlBtn: UIButton!
+    @IBOutlet weak var ingredient: UILabel!
+    @IBOutlet weak var titleFood: UILabel!
+    @IBOutlet weak var imgFood: UIImageView!
+    var viewModel:DetailsViewModel?
+       override var baseViewModel: BaseViewModel?{
+           didSet{
+               viewModel = baseViewModel as? DetailsViewModel
+           }
+       }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = viewModel?.title
+        self.imgFood.kf.setImage(with:  viewModel?.imageUrl, placeholder: UIImage(named: "not-available"))
+        self.titleFood.text = viewModel?.title
+        self.ingredient.text = viewModel?.ingredientLines
+        self.publishUrlBtn.setTitle(viewModel?.publisherUrlStr, for: .normal)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func openUrl(_ sender: Any) {
+        if let url = viewModel?.publisherUrl{
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+            let vc = SFSafariViewController(url:url , configuration: config)
+            present(vc, animated: true)
+        }
     }
-    */
-
+    
 }

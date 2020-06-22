@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/SearchTextField" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessageBar" "${PODS_CONFIGURATION_BUILD_DIR}/UIScrollView-InfiniteScroll"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView/SCLAlertView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SearchTextField/SearchTextField.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessageBar/SwiftMessageBar.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -framework "CFNetwork" -framework "Kingfisher" -framework "QuartzCore" -framework "RxCocoa" -framework "RxRelay" -framework "RxSwift" -framework "SCLAlertView" -framework "SVProgressHUD" -framework "SearchTextField" -framework "SwiftMessageBar" -framework "UIScrollView_InfiniteScroll"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
