@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0415F06724A07A1A0024B48B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415F06624A07A1A0024B48B /* DetailsViewController.swift */; };
 		0415F06A24A07B8F0024B48B /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415F06924A07B8F0024B48B /* DetailsViewModel.swift */; };
+		0415F07224A1E28F0024B48B /* FoodSearchDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415F07124A1E28F0024B48B /* FoodSearchDemoTests.swift */; };
+		0415F07D24A1E2CB0024B48B /* MockTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415F07A24A1E2CB0024B48B /* MockTask.swift */; };
+		0415F07E24A1E2CB0024B48B /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415F07B24A1E2CB0024B48B /* MockURLSession.swift */; };
+		0415F08124A1E4D80024B48B /* FoodSearchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415F08024A1E4D80024B48B /* FoodSearchServiceTests.swift */; };
 		044C89E8249B74BB00494F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C89E7249B74BB00494F4A /* AppDelegate.swift */; };
 		044C89EC249B74BB00494F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C89EB249B74BB00494F4A /* ViewController.swift */; };
 		044C89EF249B74BB00494F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044C89ED249B74BB00494F4A /* Main.storyboard */; };
@@ -34,10 +38,26 @@
 		F8F096B900C6F6F2A8E9453C /* Pods_FoodSearchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F86FECF07C9D37896A37CD4 /* Pods_FoodSearchDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0415F07424A1E28F0024B48B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044C89DC249B74BB00494F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044C89E3249B74BB00494F4A;
+			remoteInfo = FoodSearchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0415F063249FA1E90024B48B /* FoodSearchDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodSearchDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0415F06624A07A1A0024B48B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		0415F06924A07B8F0024B48B /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		0415F06F24A1E28F0024B48B /* FoodSearchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSearchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0415F07124A1E28F0024B48B /* FoodSearchDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchDemoTests.swift; sourceTree = "<group>"; };
+		0415F07324A1E28F0024B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0415F07A24A1E2CB0024B48B /* MockTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTask.swift; sourceTree = "<group>"; };
+		0415F07B24A1E2CB0024B48B /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		0415F08024A1E4D80024B48B /* FoodSearchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchServiceTests.swift; sourceTree = "<group>"; };
 		044C89E4249B74BB00494F4A /* FoodSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C89E7249B74BB00494F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044C89EB249B74BB00494F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0415F06C24A1E28F0024B48B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C89E1249B74BB00494F4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,10 +122,31 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		0415F07024A1E28F0024B48B /* FoodSearchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0415F07924A1E2CB0024B48B /* services Tests */,
+				0415F07124A1E28F0024B48B /* FoodSearchDemoTests.swift */,
+				0415F07324A1E28F0024B48B /* Info.plist */,
+			);
+			path = FoodSearchDemoTests;
+			sourceTree = "<group>";
+		};
+		0415F07924A1E2CB0024B48B /* services Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0415F07A24A1E2CB0024B48B /* MockTask.swift */,
+				0415F07B24A1E2CB0024B48B /* MockURLSession.swift */,
+				0415F08024A1E4D80024B48B /* FoodSearchServiceTests.swift */,
+			);
+			path = "services Tests";
+			sourceTree = "<group>";
+		};
 		044C89DB249B74BB00494F4A = {
 			isa = PBXGroup;
 			children = (
 				044C89E6249B74BB00494F4A /* FoodSearchDemo */,
+				0415F07024A1E28F0024B48B /* FoodSearchDemoTests */,
 				044C89E5249B74BB00494F4A /* Products */,
 				20EAB31EEFDA772457405109 /* Pods */,
 				A83F6E87F33D40512A42076A /* Frameworks */,
@@ -109,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				044C89E4249B74BB00494F4A /* FoodSearchDemo.app */,
+				0415F06F24A1E28F0024B48B /* FoodSearchDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +343,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0415F06E24A1E28F0024B48B /* FoodSearchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0415F07824A1E28F0024B48B /* Build configuration list for PBXNativeTarget "FoodSearchDemoTests" */;
+			buildPhases = (
+				0415F06B24A1E28F0024B48B /* Sources */,
+				0415F06C24A1E28F0024B48B /* Frameworks */,
+				0415F06D24A1E28F0024B48B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0415F07524A1E28F0024B48B /* PBXTargetDependency */,
+			);
+			name = FoodSearchDemoTests;
+			productName = FoodSearchDemoTests;
+			productReference = 0415F06F24A1E28F0024B48B /* FoodSearchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		044C89E3249B74BB00494F4A /* FoodSearchDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044C89F8249B74BF00494F4A /* Build configuration list for PBXNativeTarget "FoodSearchDemo" */;
@@ -323,6 +390,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
+					0415F06E24A1E28F0024B48B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 044C89E3249B74BB00494F4A;
+					};
 					044C89E3249B74BB00494F4A = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -342,11 +413,19 @@
 			projectRoot = "";
 			targets = (
 				044C89E3249B74BB00494F4A /* FoodSearchDemo */,
+				0415F06E24A1E28F0024B48B /* FoodSearchDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0415F06D24A1E28F0024B48B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C89E2249B74BB00494F4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +482,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0415F06B24A1E28F0024B48B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0415F07E24A1E2CB0024B48B /* MockURLSession.swift in Sources */,
+				0415F08124A1E4D80024B48B /* FoodSearchServiceTests.swift in Sources */,
+				0415F07D24A1E2CB0024B48B /* MockTask.swift in Sources */,
+				0415F07224A1E28F0024B48B /* FoodSearchDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C89E0249B74BB00494F4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +522,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0415F07524A1E28F0024B48B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044C89E3249B74BB00494F4A /* FoodSearchDemo */;
+			targetProxy = 0415F07424A1E28F0024B48B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		044C89ED249B74BB00494F4A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -452,6 +550,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0415F07624A1E28F0024B48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XV3HT6Q7PZ;
+				INFOPLIST_FILE = FoodSearchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SoftExpert.FoodSearchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodSearchDemo.app/FoodSearchDemo";
+			};
+			name = Debug;
+		};
+		0415F07724A1E28F0024B48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XV3HT6Q7PZ;
+				INFOPLIST_FILE = FoodSearchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SoftExpert.FoodSearchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodSearchDemo.app/FoodSearchDemo";
+			};
+			name = Release;
+		};
 		044C89F6249B74BF00494F4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +749,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0415F07824A1E28F0024B48B /* Build configuration list for PBXNativeTarget "FoodSearchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0415F07624A1E28F0024B48B /* Debug */,
+				0415F07724A1E28F0024B48B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		044C89DF249B74BB00494F4A /* Build configuration list for PBXProject "FoodSearchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
